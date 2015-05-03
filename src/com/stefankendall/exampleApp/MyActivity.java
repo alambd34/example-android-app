@@ -32,6 +32,9 @@ public class MyActivity extends Activity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        if (getPage() == R.layout.page3) {
+            return false;
+        }
 
         Intent i = new Intent(this, MyActivity.class);
         i.putExtra("page", getPage() == R.layout.page1 ? R.layout.page2 : R.layout.page3);
