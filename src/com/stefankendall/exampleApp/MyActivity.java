@@ -15,8 +15,10 @@ public class MyActivity extends Activity {
         setContentView(getPage());
 
         ImageView animatingImage = (ImageView) findViewById(R.id.animating_image);
-        AnimationDrawable animation = (AnimationDrawable) animatingImage.getDrawable();
-        animation.start();
+        if (animatingImage != null) {
+            AnimationDrawable animation = (AnimationDrawable) animatingImage.getDrawable();
+            animation.start();
+        }
     }
 
     private int getPage() {
