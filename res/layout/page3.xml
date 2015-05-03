@@ -4,6 +4,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:background="#FF7537"
+                android:id="@+id/trophy_view"
         >
     <TextView
             android:id="@+id/center_text"
@@ -15,11 +16,12 @@
             android:layout_centerInParent="true"
             android:text="Every step of the way"
             />
-    <ImageView android:layout_width="wrap_content"
+    <ImageView android:id="@+id/trophy"
+               android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:layout_below="@id/center_text"
                android:layout_centerHorizontal="true"
-               android:layout_marginTop="30dp"
+               android:layout_marginTop="40dp"
                android:src="@drawable/_955_trophy_3x"/>
 </RelativeLayout>
 
